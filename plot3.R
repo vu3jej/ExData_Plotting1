@@ -12,7 +12,7 @@ date = as.character(paste(splitted$Date, splitted$Time))
 datetime = strptime(date, format = '%d/%m/%Y %H:%M:%S')
 
 ## Creating the plot
-png(file = 'plot3.png', width = 480, height = 480)
+png(file = 'plot3.png', width = 480, height = 480, bg = "transparent")
 plot(x = datetime, y = splitted$Sub_metering_1, xlab = '', ylab = 'Energy sub metering', type ='l')
 points(x = datetime, y = splitted$Sub_metering_2, col = 'red', type = 'l')
 points(x = datetime, y = splitted$Sub_metering_3, col = 'blue', type = 'l')

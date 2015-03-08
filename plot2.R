@@ -13,6 +13,6 @@ date = as.character(paste(splitted$Date, splitted$Time))
 datetime = strptime(date, format = '%d/%m/%Y %H:%M:%S')
 
 ## Creating the plot
-png(file = 'plot2.png', width = 480, height = 480)
+png(file = 'plot2.png', width = 480, height = 480, bg = "transparent")
 plot(x = datetime, y = splitted$Global_active_power, type ='l', xlab = '', ylab = 'Global Active Power (kilowatts)')
 dev.off()

@@ -12,7 +12,7 @@ date = as.character(paste(splitted$Date, splitted$Time))
 datetime = strptime(date, format = '%d/%m/%Y %H:%M:%S')
 
 ## Creating the plot
-png(file = 'plot4.png', width = 480, height = 480)
+png(file = 'plot4.png', width = 480, height = 480, bg = "transparent")
 par(mfcol = c(2, 2))
 
 ## Adding first plot
